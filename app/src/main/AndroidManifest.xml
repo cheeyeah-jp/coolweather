@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.coolweather.android">
+    package="com.coolweather.androiddev">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -20,14 +20,14 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <service
-            android:name=".service.AutoUpdateService"
+            android:name="com.coolweather.androiddev.service.AutoUpdateService"
             android:enabled="true"
             android:exported="true">
 
         </service>
 
-        <activity android:name=".WeatherActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.coolweather.androiddev.WeatherActivity" />
+        <activity android:name="com.coolweather.androiddev.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
